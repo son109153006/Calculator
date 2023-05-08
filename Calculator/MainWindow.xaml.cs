@@ -133,10 +133,8 @@ namespace Calculator
             if (float.TryParse(txtNumber.Text, out float inputValue))
             {   // 將數值乘以 0.01
                 inputValue *= 0.01f;
-
                 string formattedResult = string.Format("{0:P2}", inputValue);
                 txtNumber.Text = formattedResult;
-
             }
             else
             {
@@ -144,13 +142,17 @@ namespace Calculator
                 txtNumber.Text = "輸入無效";
             }
         }
-    
-
         private void btnBack_Click(object sender, RoutedEventArgs e)//後退
         {
-
+            if (txtNumber.Text.Length > 1)
+            {
+                txtNumber.Text = txtNumber.Text.Substring(0, txtNumber.Text.Length - 1);
+            }
+            else
+            {
+                txtNumber.Text = "0";
+            }
         }
-
         private void btnEqual_Click(object sender, RoutedEventArgs e)
         {
             float finalResults = 0f; //宣告最後計算結果變數
