@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtNumber" HorizontalAlignment="Left" Height="75" Margin="100,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="650" SelectionOpacity="1" FontSize="20"/>
+        <TextBox x:Name="txtNumber" HorizontalAlignment="Right" Height="75" Margin="0,10,50,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="650" SelectionOpacity="1" FontSize="20" Text="0" HorizontalContentAlignment="Right"/>
         <Button x:Name="btnDivide" Content="/" HorizontalAlignment="Left" Height="55" Margin="640,108,0,0" VerticalAlignment="Top" Width="110" Click="btnDivide_Click"/>
         <Button x:Name="btnPlus" Content="*" HorizontalAlignment="Left" Height="55" Margin="640,191,0,0" VerticalAlignment="Top" Width="110" Click="btnPlus_Click"/>
         <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Height="55" Margin="640,274,0,0" VerticalAlignment="Top" Width="110" Click="btnMinus_Click"/>
